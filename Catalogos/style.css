@@ -1,6 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--fontComplementar);
+}
+
+body {
+    background-color: #657047;
+}
+
+.container {
+    width: 90%;
+}
+
+/* HEADER */
+header {
+    background-color: aquamarine;
+}
+
+.container_header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone_voltar {
+    height: 50px;
+}
+
+.icone_logo {
+    height: 50px;
 }
