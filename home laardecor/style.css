@@ -1,0 +1,29 @@
+*{
+     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.conteiner_cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    background-color: #657047;
+
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+header {
+    background-color: #657047;
+    height: 100px;
+
+}
+.home {
+    height: 50px;
+}
+
+body{
+    background-color: #FEF8E8;
+}
