@@ -2,9 +2,122 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Limelight", sans-serif;
     font-family: "Be Vietnam Pro", sans-serif;
+
 }
 
-.container-cabecalho{
+body {
+    background-color: #FEF8E8;
+}
+
+header {
     background-color: #657047;
+    height: 90px;
+}
+
+.container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+}
+
+
+.icone-voltar {
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.acessivel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* CADASTRO */
+.container-lista,
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-cadastro h2 {
+    font-size: 48px;
+    margin-top: 50px;
+    color: #623820;
+    box-shadow: 0 0 15 #00000050;
+    font-family: "Limelight", sans-serif;
+
+
+}
+
+.container-cadastro hr {
+    width: 560px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: #623820;
+    margin-bottom: 100px;
+
+}
+
+.container-lista h2 {
+    font-size: 48px;
+    margin-top: 100px;
+    color: #623820;
+    font-family: "Limelight", sans-serif;
+}
+
+.container-lista hr {
+    width: 230px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 100px;
+    background-color: #FACC14;
+    box-shadow: 0 0 15 #00000050;
+
+}
+
+.box-cadastro {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1440px;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.cadastro-coluna1 {
+    width: 45%;
+    color: #623820;
+
+}
+
+.cadastro-coluna2 {
+    width: 45%;
+    color: #623820;
+}
+
+.categoria-img {
+  display: flex;
+  justify-content: space-between;
 }
