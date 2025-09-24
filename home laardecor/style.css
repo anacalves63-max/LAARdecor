@@ -83,20 +83,27 @@ header {
 /* cards */
 .cards{
     border-radius: 50px;
-
+    
 }
 
- div.linha1{
+div.linha1{
     display: flex;
     justify-content: center;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
 }
-div.quarto{
-     margin-right: 30px; 
+.quarto{
+    margin-right: 30px; 
+ 
+     
+    }
+
+    .quarto img{
+    
+    border-radius: 50px;
      
     }
     
-    div.quarto-inf{
+.quarto-inf{
         
     }
     
