@@ -2,9 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fontComplementar);
 }
 
-.acessivel{
+:root {
+    --corBackground: #623820;
+    --corPrincipal: #657047;
+    --alturaRodape: 140px;
+    --font-family: "Be Vietnam Pro", sans-serif;
+    --fontComplementar: "Abel", sans-serif;
+}
+
+.acessivel {
     position: absolute;
     /* Remove do fluxo do layout */
     width: 1px;
@@ -39,21 +48,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .icone_voltar {
-    height: 50px;
+    height: 60px;
 }
 
 .icone_logo {
-    height: 50px;
+    height: 70px;
+    display: flex;
 }
 
-.icone_lupa{
-    height: 50px;
-}
 
-.icone_login{
+.icone_login {
     height: 50px;
 }
 
@@ -110,18 +118,15 @@ header {
     width: 100%;
 }
 
-.card h2 {
-    margin: 20px 0;
-    font-size: 28px;font-family: "Abel";
-}
 
 .card p {
     padding: 0 10px;
     font-size: 18px;
     font-family: "Be Vietnam Pro";
+    margin: 25px;
 }
 
-.valor{
+.valor {
     font-family: "Be Vietnam Pro";
 }
 
@@ -142,4 +147,61 @@ header {
 .whatsapp:hover {
     transform: scale(1.1);
     filter: drop-shadow(0 7px 2px #00000025);
+}
+
+
+
+
+
+/* RODAPE */
+footer {
+    width: 100%;
+    height: var(--alturaRodape);
+    background-color: var(--corPrincipal);
+    font-family: var(--fontComplementar);
+    font-size: 16px;
+    
+    line-height: var(--alturaRodape);
+    text-align: center;
+}
+
+.conteudo_footer{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+/* EMAIL */
+.icone_email {
+    left: 200px;
+    bottom: 30px;
+}
+
+.icone_email {
+    width: 80px;
+}
+
+.icone_email:hover {
+    transform: scale(1.1);
+}
+
+/* MEDIA */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+    .cards {
+        gap: 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        background-size: cover;
+        background-position: -50px;
+        aspect-ratio: 1.8;
+    }
 }
