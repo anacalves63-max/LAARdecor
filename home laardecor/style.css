@@ -31,7 +31,7 @@ header {
 
 .logo {
     width: 100px;
-   
+
 
 }
 
@@ -39,7 +39,7 @@ header {
     width: 60%;
     max-width: 500px;
     margin: 0 10px;
-   /* background-color: aqua;*/
+    /* background-color: aqua;*/
     position: relative;
 }
 
@@ -47,89 +47,177 @@ header {
     height: 24px;
     position: absolute;
     left: 9px;
-    top: 7px;
+    top: 9px;
+    fill: #b0b0b0;
+
 }
 
 .busca {
-    width: 80%;
-    height: 30px;
-    border-radius: 10px;
-    border: solid 1px #cccccc;
-    padding-left: 2.5rem;
-    font-family: "Abel", system-ui;
-    font-size: 1.5rem;
-    top: 20px;
-    padding: 10px;
+   width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  padding-left: 2.5rem;
+  font-size: 1rem;
 }
 
-.login{
+.login {
     width: 50px;
     cursor: pointer;
 }
 
 /* banner */
-.banner{
+.banner {
     background-image: url(../assets/img/sala\ inicio\ \(1\).png);
-     width: 100%;
-  aspect-ratio: 3.2;
-  background-repeat: no-repeat;
-  background-size: cover;
+    width: 100%;
+    aspect-ratio: 3.2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
 }
-.rolagem{
-    width: 50px;
+
+.rolagem {
+    width: 70px;
     margin-left: 50%;
+    margin-bottom: 50px;
 }
 
 /* cards */
-.cards{
-    border-radius: 50px;
+
+.cards {
+    border-radius: 20px;
+
+}
+
+div.linha1 {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+
+.quarto {
+    margin-right: 30px;
+    width: 60%;
+}
+.quarto-inf {
+    
+    width: 40%;
+    
+}
+.quarto img {
+    
+    cursor: pointer;
+    border-radius: 20px;
     
 }
 
-div.linha1{
+.quarto-inf img {
+    
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+div.linha2 {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
+    
 }
-.quarto{
-    margin-right: 30px; 
- 
-     
-    }
+.sala{
 
-    .quarto img{
-    
-    border-radius: 50px;
-     
-    }
-    
-.quarto-inf{
-        
-    }
-    
-    div.linha2{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    
-    div.banheiro{
-        
-        margin-right: 30px; 
-    }
-    
-    
-    div.cozinha{
-        
-        margin-right: 30px; 
-    }
-    
-    div.linha3{
-        display: flex;
-        justify-content: center;
-    }
-    
-    div.area{
-     margin-right: 30px; 
+}
 
- }
+.banheiro{
+
+}
+.cozinha{
+
+}
+
+.sala img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banheiro img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+.cozinha img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+div.linha3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.area {
+    margin-right: 30px;
+}
+
+.area img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.escrit img {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* whatesapp */
+.whatsapp{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: transform 0.5s ease-in-out,
+              filter 0.5s ease-in-out;
+}
+
+.whatsapp img{
+  width: 80px;
+  filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 2px #00000025);
+}
+
+
+
+/* rodape */
+
+.rodape {
+
+    height: 100px;
+    background-color: var(--corprincipal);
+
+    text-align: center;
+
+    display: flex;
+    
+}
+.envelope{
+    width: 40px;
+    cursor: pointer;
+}
+
+.rodape p {
+    font-size: 30px;
+    font-family: "Abel", system-ui;
+    text-align: left;
+    color: #FACC14;
+}
