@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fontComplementar);
 }
 
 :root {
@@ -53,6 +52,7 @@ header {
 
 .icone_voltar {
     height: 60px;
+    margin-bottom: 15px;
 }
 
 .icone_logo {
@@ -68,11 +68,12 @@ header {
 
 /* BANNER */
 .banner {
-    background-image: url(../assets/img/Quarto.png);
+    background-image: url(../assets/img/Quarto2\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 600px;
+    /* height: 535px; */
     aspect-ratio: 3.2;
 }
 
@@ -85,17 +86,20 @@ header {
     margin: 100px 0;
 }
 
+
 .titulo span {
     font-size: 48px;
     font-family: "Limelight";
+    color: #2A3A01;
 }
 
 .titulo hr {
-    background-color: var(--corPrincipal);
+    background-color: var(--corBackground);
     width: 300px;
     height: 4px;
     border: none;
     border-radius: 2px;
+    margin: 5px;
 }
 
 .cards {
@@ -107,7 +111,7 @@ header {
 
 .card {
     width: 350px;
-    height: 500px;
+    height: 520px;
     background-color: #657047;
     border-radius: 30px;
     text-align: center;
@@ -121,13 +125,17 @@ header {
 
 .card p {
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Be Vietnam Pro";
     margin: 25px;
+    color: white;
 }
 
 .valor {
     font-family: "Be Vietnam Pro";
+    background-color: #FACC14;
+    border-radius: 7px;
+    font-size: 20px;
 }
 
 /* WHATSAPP */
@@ -185,6 +193,11 @@ footer {
 
 .icone_email:hover {
     transform: scale(1.1);
+}
+
+.email{
+    color: #FACC14;
+    font-size: 30px;
 }
 
 /* MEDIA */
