@@ -12,7 +12,7 @@ body {
     background-color: #FEF8E8;
 }
 
-div.container_cabecalho {
+.container_cabecalho {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -53,12 +53,12 @@ header {
 }
 
 .busca {
-   width: 100%;
-  height: 42px;
-  border-radius: 10px;
-  border: solid 1px #cccccc;
-  padding-left: 2.5rem;
-  font-size: 1rem;
+    width: 100%;
+    height: 42px;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+    padding-left: 2.5rem;
+    font-size: 1rem;
 }
 
 .login {
@@ -83,117 +83,99 @@ header {
 }
 
 /* cards */
-
 .cards {
     border-radius: 20px;
-
+    padding: 0 50px 0 50px
 }
 
-div.linha1 {
+.linha1,
+.linha2,
+.linha3
+{
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
+}
+
+.area,
+.cozinha,
+.banheiro,
+.quarto{
+    margin-right: 30px;
 }
 
 
 .quarto {
-    margin-right: 30px;
-    width: 60%;
+    width: 833px;
+    aspect-ratio: 2.19;
 }
+
 .quarto-inf {
-    
-    width: 40%;
-    
-}
-.quarto img {
-    
-    cursor: pointer;
-    border-radius: 20px;
-    
-}
-
-.quarto-inf img {
-    
-    cursor: pointer;
-    border-radius: 20px;
-    
-}
-
-div.linha2 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    width: 100%;
-    
-}
-.sala{
-
+    width: 588px;
+    aspect-ratio: 1.55;
 }
 
 .banheiro{
-
-}
-.cozinha{
-
+    width: 342px;
+    aspect-ratio: 0.91;
 }
 
-.sala img {
-    border-radius: 20px;
-    cursor: pointer;
+.cozinha {
+    width: 342px;
+    aspect-ratio: 0.92;
 }
 
-.banheiro img {
-    border-radius: 20px;
-    cursor: pointer;
+.sala {
+    width: 704px;
+    aspect-ratio: 1.90;
 }
 
-
-
-.cozinha img {
-    border-radius: 20px;
-    cursor: pointer;
+.area{
+    width: 587px;
+    aspect-ratio: 1.36;
 }
 
-div.linha3 {
-    display: flex;
-    justify-content: center;
+.escrit{
+    width: 832px;
+    aspect-ratio: 1.93;
+}
+
+.escrit img,
+.area img,
+.sala img,
+.cozinha img,
+.banheiro img,
+.quarto-inf img,
+.quarto img{
     width: 100%;
-    margin-bottom: 50px;
-}
-.area {
-    margin-right: 30px;
 }
 
-.area img {
-    border-radius: 20px;
+img{
+    border-radius: 10px;
     cursor: pointer;
 }
 
-.escrit img {
-    border-radius: 20px;
-    cursor: pointer;
-}
+
 
 
 /* whatesapp */
-.whatsapp{
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  transition: transform 0.5s ease-in-out,
-              filter 0.5s ease-in-out;
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+        filter 0.5s ease-in-out;
 }
 
-.whatsapp img{
-  width: 80px;
-  filter: drop-shadow(0 5px 1px #00000025);
+.whatsapp img {
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
 }
 
-.whatsapp:hover{
-  transform: scale(1.2);
-  filter: drop-shadow(0 10px 2px #00000025);
+.whatsapp:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
 }
 
 
@@ -208,9 +190,10 @@ div.linha3 {
     text-align: center;
 
     display: flex;
-    
+
 }
-.envelope{
+
+.envelope {
     width: 40px;
     cursor: pointer;
 }
@@ -220,4 +203,17 @@ div.linha3 {
     font-family: "Abel", system-ui;
     text-align: left;
     color: #FACC14;
+}
+
+/* midia */
+@media screen and (max-width: 900px){
+    .main_home 
+
+ .container{
+    width: 95%;
+ }
+
+ .cards{
+    gap: 4%
+ }
 }
