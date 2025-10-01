@@ -80,12 +80,16 @@ header {
     width: 70px;
     margin-left: 50%;
     margin-bottom: 50px;
+    align-items: center;
 }
 
 /* cards */
 .cards {
-    border-radius: 20px;
-    padding: 0 50px 0 50px
+    
+   width: 90%;
+   margin: 0 auto;
+   padding: 0;
+   margin-bottom: auto;
 }
 
 .linha1,
@@ -96,13 +100,14 @@ header {
     justify-content: center;
     margin-bottom: 30px;
     width: 100%;
+    gap: 2rem;
 }
 
 .area,
 .cozinha,
 .banheiro,
 .quarto{
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
 
@@ -152,7 +157,6 @@ header {
 }
 
 img{
-    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -184,12 +188,16 @@ img{
 
 .rodape {
 
-    height: 100px;
+    height: 87px;
     background-color: var(--corprincipal);
 
     text-align: center;
 
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 
 }
 
@@ -203,17 +211,14 @@ img{
     font-family: "Abel", system-ui;
     text-align: left;
     color: #FACC14;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-/* midia */
-@media screen and (max-width: 900px){
-    .main_home 
-
- .container{
-    width: 95%;
- }
-
- .cards{
-    gap: 4%
- }
+@media screen (max-width: 450px){
+    .rolagem{
+ width: 30%;
+    margin-left: 50%;
+    margin-bottom: 50px;
+    }
 }
