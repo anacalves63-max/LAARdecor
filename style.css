@@ -96,7 +96,7 @@ header {
 .container-lista h2 {
   max-width: 90%;
   font-size: 48px;
-  margin-top: 100px;
+  margin-top: 53px;
   color: #623820;
   font-family: "Limelight", sans-serif;
 
@@ -227,9 +227,8 @@ table {
 th {
   border-bottom: solid 2px #FACC14;
   padding: 0 3px 5px 3px;
-  font-size: 25px;
+  font-size: 22px;
   color: #2A3A01;
-  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 td {
@@ -252,13 +251,16 @@ footer {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  /* position: fixed;   fixa no final da tela */
+  bottom: 0;         /* gruda no rodapé */
+  left: 0;     
 }
 
 footer p {
   font-family: "Abel", sans-serif;
   text-align: center;
   color: #FACC14;
-  font-size: 25px;
+  font-size: 30px;
   margin-left: 10px;
 }
 
