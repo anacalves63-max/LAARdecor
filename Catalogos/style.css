@@ -7,7 +7,7 @@
 :root {
     --corBackground: #623820;
     --corPrincipal: #657047;
-    --alturaRodape: 140px;
+    --alturaRodape: 87px;
     --font-family: "Be Vietnam Pro", sans-serif;
     --fontComplementar: "Abel", sans-serif;
 }
@@ -35,6 +35,7 @@ body {
 
 .container {
     width: 90%;
+    margin: 0 auto;
 }
 
 /* HEADER */
@@ -42,7 +43,7 @@ header {
     background-color: #657047;
 }
 
-.container_header {
+.container-header {
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -50,18 +51,17 @@ header {
 
 }
 
-.icone_voltar {
+.icone-voltar {
     height: 60px;
-    margin-bottom: 15px;
 }
 
-.icone_logo {
-    height: 70px;
+.icone-logo {
+    height: 80px;
     display: flex;
 }
 
 
-.icone_login {
+.icone-login {
     height: 50px;
 }
 
@@ -83,23 +83,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0;
+    margin: 100px auto;
 }
 
 
 .titulo span {
     font-size: 48px;
     font-family: "Limelight";
-    color: #2A3A01;
+    color: #623820;
 }
 
 .titulo hr {
     background-color: var(--corBackground);
-    width: 300px;
+    width: 200px;
     height: 4px;
     border: none;
     border-radius: 2px;
-    margin: 5px;
+    margin: 2px;
+    box-shadow: 0 4px 4px 2px #00000025;
 }
 
 .cards {
@@ -107,6 +108,7 @@ header {
     flex-wrap: wrap;
     gap: 10%;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .card {
@@ -143,8 +145,8 @@ header {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    transition: transform 0.5s ease-in-out, 
-                filter 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out,
+        filter 0.5s ease-in-out;
 }
 
 .whatsapp img {
@@ -159,6 +161,12 @@ header {
 
 
 
+/* EMAIL */
+.icone-email {
+    width: 40px;
+    align-items: center;
+}
+ 
 
 
 /* RODAPE */
@@ -166,42 +174,32 @@ footer {
     width: 100%;
     height: var(--alturaRodape);
     background-color: var(--corPrincipal);
-    font-family: var(--fontComplementar);
-    font-size: 16px;
-    
-    line-height: var(--alturaRodape);
-    text-align: center;
-}
-
-.conteudo_footer{
     display: flex;
-    width: 90%;
-    margin: 0 auto;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-
-/* EMAIL */
-.icone_email {
-    left: 200px;
-    bottom: 30px;
-}
-
-.icone_email {
-    width: 80px;
-}
-
-.icone_email:hover {
-    transform: scale(1.1);
-}
-
-.email{
+.conteudo-footer {
+    font-family: "Abel", system-ui;
+    align-items: center;
     color: #FACC14;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 10px;
 }
 
-/* MEDIA */
+footer p{
+    font-family: "Abel", system-ui;
+    margin-left: 10px;
+     color: #FACC14;
+     font-size: 30px;
+}
+
+
+
 @media screen and (max-width: 900px) {
+
+    /* MEDIA */
     .container {
         width: 95%;
     }
