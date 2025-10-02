@@ -252,8 +252,9 @@ footer {
   align-items: center;
   cursor: pointer;
   /* position: fixed;   fixa no final da tela */
-  bottom: 0;         /* gruda no rodapé */
-  left: 0;     
+  bottom: 0;
+  /* gruda no rodapé */
+  left: 0;
 }
 
 footer p {
