@@ -86,10 +86,10 @@ header {
 /* cards */
 .cards {
     
-   width: 90%;
-   margin: 0 auto;
-   padding: 0;
-   margin-bottom: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: auto;
 }
 
 .linha1,
@@ -169,7 +169,8 @@ img{
     right: 30px;
     bottom: 30px;
     transition: transform 0.5s ease-in-out,
-        filter 0.5s ease-in-out;
+    filter 0.5s ease-in-out;
+    z-index: 99;
 }
 
 .whatsapp img {
@@ -186,19 +187,20 @@ img{
 
 /* rodape */
 
-.rodape {
 
+.rodape {
+    
     height: 87px;
     background-color: var(--corprincipal);
-
+    
     text-align: center;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
+    
+    
+    
 }
 
 .envelope {
@@ -215,10 +217,18 @@ img{
     margin-left: 10px;
 }
 
-@media screen (max-width: 450px){
-    .rolagem{
- width: 30%;
-    margin-left: 50%;
-    margin-bottom: 50px;
+@media(max-width: 550px){
+    
+    .fixo{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .rolagem {
+        width: 70px;
+        margin-left: 50%;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
     }
 }
