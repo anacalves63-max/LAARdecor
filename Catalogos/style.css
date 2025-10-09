@@ -33,9 +33,16 @@ body {
     background-color: #FEF8E9;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
+#sombra {
+    width: 100vw;
+    height: 200px;
+    background-color: #65704765;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    top: -210px;
+    overflow-y: hidden;
+    transition: .5s;
 }
 
 /* HEADER */
@@ -43,26 +50,62 @@ header {
     background-color: #657047;
 }
 
+
+
 .container-header {
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: aquamarine; */
+    max-width: 1440px;
+    width: 85%;
+    margin: 0 auto;
 
 }
 
-.icone-voltar {
-    height: 60px;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.box-busca {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 10px;
+}
+
+.icone-lupa {
+    height: 24px;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    fill: #b0b0b0;
 }
 
 .icone-logo {
     height: 80px;
-    display: flex;
 }
 
+.campo-busca {
+    width: 100%;
+    color: #000000;
+    /* display: none; */
+    z-index: 2;
+    height: 42px;
+    border-radius: 10px;
+    border: solid 1px #cccccc;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+}
 
-.icone-login {
-    height: 50px;
+.menu-barras {
+    width: 50px;
+    color: #FACC14;
+    /* display: none; */
+    z-index: 2;
 }
 
 
@@ -118,6 +161,12 @@ header {
     border-radius: 30px;
     text-align: center;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 4px 2px #00000025;
 }
 
 .card img {
@@ -166,7 +215,7 @@ header {
     width: 40px;
     align-items: center;
 }
- 
+
 
 
 /* RODAPE */
@@ -188,21 +237,26 @@ footer {
     margin-left: 10px;
 }
 
-footer p{
+footer p {
     font-family: "Abel", system-ui;
     margin-left: 10px;
-     color: #FACC14;
-     font-size: 30px;
+    color: #FACC14;
+    font-size: 30px;
 }
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+    .icone-logo {
+        /* display: none; */
+    }
 
-    /* MEDIA */
+
+
+    /* MEDIA
     .container {
         width: 95%;
-    }
+    } */
 
     .cards {
         gap: 4%;
@@ -214,5 +268,20 @@ footer p{
         background-size: cover;
         background-position: -50px;
         aspect-ratio: 1.8;
+    }
+
+    .box-busca {
+        position: fixed;
+        overflow-y: hidden;
+        top: -100px;
+        z-index: 2;
+        right: 30px;
+        transition: .5s;
+        width: 80%;
+    }
+
+    .menu-barras {
+        display: block;
+        right: 30px;
     }
 }
