@@ -103,15 +103,16 @@ header {
     box-shadow: 0 4px 4px 2px #00000025;
 }
 
-.cards {
+.cards-produto {
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
     justify-content: center;
     margin: 0 auto;
+    
 }
 
-.card {
+.card-produto {
     width: 350px;
     height: 520px;
     background-color: #657047;
@@ -120,12 +121,12 @@ header {
     margin-bottom: 100px;
 }
 
-.card img {
+.card-produto img {
     width: 100%;
 }
 
 
-.card p {
+.card-produto p {
     padding: 0 10px;
     font-size: 20px;
     font-family: "Be Vietnam Pro";
